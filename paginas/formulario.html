@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>formulario de contacto</title>
+        <link rel="stylesheet" href="formulario.css">
+    </head>
+<body>
+<main>
+<div class="container">  
+  <form id="contact" action="" method="post">
+    <h3>Formulario de Contacto</h3>
+    <center> <h4>Ponte en contacto con nosotros</h4></center>
+    <fieldset>
+      <input placeholder="Tu Nombre" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Tu Correo Electronico" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="comentarios" type="text" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Tu direccion de casa" type="text" tabindex="4" required>
+    </fieldset>
+    <fieldset class="elegir">
+      <p>seleciona tu pais</p>
+      <select id="slcPaises">
+        <option value="uy">Uruguay</option>
+        <option value="ar">Argentina</option>
+        <option value="br">Brasil</option>
+    </select>
+    </fieldset>
+    <fieldset class="elegir">
+      <p>selecciona tu tipo de proyecto</p>
+      <select id="slcPaises">
+        <option value="uy">web</option>
+        <option value="ar">fundacion</option>
+        <option value="br">contruccion</option>
+    </select>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Escribe tu mensaje" tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+    </fieldset>
+  </form>
+</div>
+</main>
+</body>
+
+</html>

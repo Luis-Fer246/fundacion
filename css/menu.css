@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.menu{
+    color: beige;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px;
+    box-shadow: 5px 0px 10 black;
+}
+.menu2{
+    color: beige;
+    position: absolute;
+    top: 0;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px;
+    box-shadow: 5px 0px 10 black;
+    background-color: red;
+}
+.logo{
+    margin-top:20;
+    margin: 4px;
+    height: 65px; /*tam de logo*/
+}
+.menu_items{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+.menu_items li{
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.menu_items li a{
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size:18px;
+    display: block;
+    text-transform: uppercase;
+    color: rgb(245, 229, 220);
+}
+.menu_items li:hover, li.active{
+    background-color: rgba(0,0,0,.3);
+    transition: .4s;
+}
+.btn_menu {
+    margin-right: 30px;
+    font-size: 50px;
+    color:beige;
+    cursor: pointer;
+    display: none;
+}
+.btn_menu:hover {
+    color: rgba(224, 40, 40, 0.3);
+    transition: .4s;
+}
+ul.show {
+    top: 65px;
+}
+.stiky{
+    background: #202020;
+    color: beige;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px;
+    box-shadow: 5px 0px 10 black;
+}
+
+@media screen and (max-width: 952px){
+    .logo {
+            font-weight: 500;
+            margin: 4px;
+            width:130%;
+            height: 40px; /*tam de logo*/
+    }
+    .menu_items li a {
+        font-size: 16px;
+
+    }
+    }
+
+@media screen and (max-width: 858px) {
+    .menu { 
+        height:65px;
+    }
+    .btn_menu {
+        display: inline-flex;
+    }
+    .menu_items{
+        position: absolute;
+        width: 100vw;
+        background: #414141;
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+    .menu_items li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+     .menu_items li:hover {
+        background: none;
+
+    }
+    .menu_items li a{
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .menu_items li a:hover {
+        color: #e9183b;
+    }
+    .logo{
+    padding-left: 35px;
+    }  
+}
+
+.ir-arriba{
+    display:none;
+    background-repeat:no-repeat;
+    font-size:20px;
+    color:#7EC13F;
+    cursor:pointer;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    z-index:2;
+  }
+
+/*  botgones*/
+
+.button {
+    float: left;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background: rgb(3, 3, 3);
+    overflow: hidden;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+  }
+  
+  .button:hover {
+    width: 200px;
+  }
+  
+  .button:nth-child(1):hover .icon {
+    background: #e1306c;
+  }
+  
+  .button:nth-child(2):hover .icon {
+    background: #4267b2;
+  }
+  
+  .button:nth-child(3):hover .icon {
+    background: #1da1f2;
+  }
+  
+  .button:nth-child(4):hover .icon {
+    background: #0e76a8;
+  }
+  
+  .button:nth-child(5):hover .icon {
+    background: #ff0000;
+  }
+  
+  .button:nth-child(6):hover .icon {
+    background: #333;
+  }
+  
+  .button:nth-child(1) span {
+    color: #e1306c;
+  }
+  
+  .button:nth-child(2) span {
+    color: #4267b2;
+  }
+  
+  .button:nth-child(3) span {
+    color: #1da1f2;
+  }
+  
+  .button:nth-child(4) span {
+    color: #0e76a8;
+  }
+  
+  .button:nth-child(5) span {
+    color: #ff0000;
+  }
+  
+  .button:nth-child(6) span {
+    color: #333;
+  }
+  
+  .button .icon {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover i {
+    color: #fff;
+  }
+
+  @media (max-width: 950px) {
+    .button:hover {
+        width: 60px;
+      }
+    }
