@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "safiro";
+    src: url("safiro-medium") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+#myCarousel{
+    height:100vh;
+    width:100%;
+}
+.gato{
+    color: #efa5a2;
+}
+.perro{
+    color: #00afa5;
+}
+h3, .h3 {
+    font-family: "safiro";
+    color:
+  }
+
+.navbar {
+    font-family: "safiro";
+    background-color: #070707;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+
+.statistics i {
+    color: #00ebc7;
+    border: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 5px;
+}
+.servicios {
+    background-color: #fffffe;
+}
+.servicios i {
+    color: gray;
+}
+.altura{
+    height: 80vh;
+}
+.adopciones {
+    background-color: #bae8e8;
+}
+.adopciones a {
+    align-items: center;
+    background-color: #272343;
+}
+
+.card-border{
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+.card-border:hover{
+    transform: scale(1.05);
+}
+
+.contacto {
+    background-color: #e3f6f5;
+}
+
+
+
+.preguntas {
+    background: rgb(#E3F6F5);
+}
